@@ -20,7 +20,7 @@ public class CarRentalSystemDemo {
         LocalDate endDate = startDate.plusDays(3);
         List<Car> availableCars = rentalSystem.searchCars("Toyota", "Camry", startDate, endDate);
         if (!availableCars.isEmpty()) {
-            Car selectedCar = availableCars.getFirst();
+            Car selectedCar = availableCars.get(0);
             Reservation reservation = rentalSystem.makeReservation(customer1, selectedCar, startDate, endDate);
             if (reservation != null) {
                 boolean paymentSuccess = rentalSystem.processPayment(reservation);

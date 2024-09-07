@@ -6,7 +6,7 @@ import parkinglot.vehicletype.Truck;
 import parkinglot.vehicletype.Vehicle;
 
 public class ParkingLotDemo {
-    public static void run() {
+    public static void main(String[] args) {
         ParkingLot parkingLot = ParkingLot.getInstance();
         parkingLot.addLevel(new Level(1, 100));
         parkingLot.addLevel(new Level(2, 80));
